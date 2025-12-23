@@ -518,3 +518,256 @@ body {
     font-size: 2rem;
   }
 }
+/* Why Teens Page Specific Styles */
+.hero-page {
+  padding: 5rem 0 4rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.hero-page .hero-content h1 {
+  color: white;
+  font-size: 2.8rem;
+}
+
+.hero-page .hero-content p {
+  color: rgba(255,255,255,0.95);
+  font-size: 1.1rem;
+}
+
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-large {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.15);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+  background: linear-gradient(45deg, #fff, rgba(255,255,255,0.8));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+
+.benefit-card.featured {
+  border: 2px solid #e3f2fd;
+  background: linear-gradient(145deg, #ffffff, #f8fbff);
+}
+
+.benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-list {
+  margin: 1rem 0 0 0;
+  padding-left: 1.5rem;
+}
+
+.benefit-list li {
+  margin-bottom: 0.25rem;
+  position: relative;
+}
+
+.benefit-list li::before {
+  content: "✨";
+  position: absolute;
+  left: -1.5rem;
+}
+
+.price-comparison {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  border-radius: 12px;
+}
+
+.price-agency {
+  font-size: 0.9rem;
+  color: #ef4444;
+  text-decoration: line-through;
+  margin-bottom: 0.25rem;
+}
+
+.price-teen {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #10b981;
+}
+
+.savings {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.comparison-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.comparison-table th {
+  background: #f8fafc;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.comparison-table td:first-child {
+  font-weight: 600;
+  width: 35%;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.result-card {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.result-number {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-card {
+  padding: 2.5rem;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.5s ease;
+}
+
+.testimonial-card.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.quote-icon {
+  font-size: 4rem;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+
+.faq-accordion .faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-item h3 {
+  cursor: pointer;
+  position: relative;
+  padding-right: 2rem;
+}
+
+.faq-item h3::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 300;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.open h3::after {
+  transform: rotate(45deg);
+}
+
+.faq-item p {
+  margin-top: 1rem;
+  display: none;
+}
+
+.faq-item.open p {
+  display: block;
+}
+
+.cta-section {
+  padding: 4rem 0;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 2rem;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-page .hero-content h1 {
+    font-size: 2.2rem;
+  }
+}
+
